@@ -1,2 +1,46 @@
+:PROPERTIES:
+:EXPORT_FILE_NAME: 
+:EXPORT_LATEX_HEADER+: \usepackage[outputdir=Output]{minted}
+:END:
 
-* 
+
+* Problem 1. Saying hello
+#+BEGIN_SRC python :exports code
+  name = raw_input("What is your name?")
+  print "Hello " + name + " nice to meet you!"
+#+END_SRC 
+
+* Problem 2. Couting number of characters
+#+BEGIN_SRC python
+  string = raw_input('What is the input string?')
+  num = len(string)
+  print string + ' has ' + str(num) + ' characters.'
+#+END_SRC
+
+* Problem 3. Printing quotes
+#+BEGIN_SRC python
+  quote = raw_input('What is the quote?')
+  name = raw_input('Who said it?')
+  print (name + ' says, ' + '"' + quote + '"')
+#+END_SRC
+* Problem 4. Mad Libs
+#+BEGIN_SRC python
+  noun = raw_input('Enter a noun:')
+  verb = raw_input('Enter a verb:')
+  adjective = raw_input('Enter an adjective:')
+  adverb = raw_input('Enter an adverb:')
+  print 'Do you %s your %s %s %s? This is hilarous!' % (verb,adjective,noun, adverb)
+#+END_SRC
+* Problem 5. Simple math
+#+BEGIN_SRC python
+  a = raw_input('What is the first number?')
+  b = raw_input('What is the second number?')
+  inta = int(a)
+  intb = int(b)
+  addi = inta + intb
+  subi = inta - intb
+  multi = inta * intb
+  divi = float(inta) / float(intb)
+  print a +'+'+ b +'='+ str(addi) +'\n' + a +'-'+ b +'='+ str(subi) +'\n' + a +'*'+ b +'='+ str(multi)+'\n' + a +'/'+ b +'='+ str(int(divi))
+#+END_SRC
+* Problem 6. Retirement Calculator

@@ -1,0 +1,81 @@
+% Created 2018-11-08 to. 23:41
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{minted}
+\author{Christian}
+\date{\today}
+\title{exercises}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.2.2 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+
+\section{Problem 1. Saying hello}
+\label{sec-1}
+\begin{minted}[]{python}
+name = raw_input("What is your name?")
+print "Hello " + name + " nice to meet you!"
+\end{minted}
+
+\section{Problem 2. Couting number of characters}
+\label{sec-2}
+\begin{minted}[]{python}
+string = raw_input('What is the input string?')
+num = len(string)
+print string + ' has ' + str(num) + ' characters.'
+\end{minted}
+
+\section{Problem 3. Printing quotes}
+\label{sec-3}
+\begin{minted}[]{python}
+quote = raw_input('What is the quote?')
+name = raw_input('Who said it?')
+print (name + ' says, ' + '"' + quote + '"')
+\end{minted}
+\section{Problem 4. Mad Libs}
+\label{sec-4}
+\begin{minted}[]{python}
+noun = raw_input('Enter a noun:')
+verb = raw_input('Enter a verb:')
+adjective = raw_input('Enter an adjective:')
+adverb = raw_input('Enter an adverb:')
+print 'Do you %s your %s %s %s? This is hilarous!' % (verb,adjective,noun, adverb)
+\end{minted}
+\section{Problem 5. Simple math}
+\label{sec-5}
+\begin{minted}[]{python}
+a = raw_input('What is the first number?')
+b = raw_input('What is the second number?')
+inta = int(a)
+intb = int(b)
+addi = inta + intb
+subi = inta - intb
+multi = inta * intb
+divi = float(inta) / float(intb)
+print a +'+'+ b +'='+ str(addi) +'\n' + a +'-'+ b +'='+ str(subi) +'\n' + a +'*'+ b +'='+ str(multi)+'\n' + a +'/'+ b +'='+ str(int(divi))
+\end{minted}
+\section{Problem 6. Retirement Calculator}
+\label{sec-6}
+% Emacs 25.2.2 (Org mode 8.2.10)
+\end{document}
